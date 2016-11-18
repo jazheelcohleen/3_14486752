@@ -1,21 +1,14 @@
 class Player
 
+  attr_reader :name
+
   def initialize(name)
     @name = name
+    @player_answer_array = []
   end
 
-  def welcome
-    name = gets
-    "Welcome to the Arithmetic Tutor, #{@name}!"
-
+  def player_answer
+    @player_answer_array << gets.to_i
   end
-
-  def player_question(question)
-    question.print_question
-    player_answer = gets
-
-  end
-
-
 
 end
