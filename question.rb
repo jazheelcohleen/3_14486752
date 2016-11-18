@@ -1,6 +1,6 @@
 class Question
 
-  attr_reader :result
+  attr_reader :result, :num1, :num2
 
   def initialize(num1, num2)
     @num1 = num1
