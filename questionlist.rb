@@ -2,7 +2,7 @@ require_relative 'question.rb'
 
 class QuestionList
 
-  attr_reader :list_of_questions
+  attr_reader :list_of_questions, :result_array
 
   def initialize
     @list_of_questions = []
