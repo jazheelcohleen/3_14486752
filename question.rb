@@ -9,14 +9,14 @@ class Question
   end
 
   def print_question
-    "What is #{@num1} + #{@num2}?"
+    "What is #{@num1} + #{@num2}? "
   end
 
   def question_result(player_answer)
     if (result == player_answer)
-      "What is #{@num1} + #{@num2}? CORRECT"
+      "What is #{@num1} + #{@num2}? CORRECT\n"
     else
-      "What is #{@num1} + #{@num2}? INCORRECT"
+      "What is #{@num1} + #{@num2}? INCORRECT\n"
     end
   end
 
