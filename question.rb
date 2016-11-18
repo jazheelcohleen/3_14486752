@@ -1,5 +1,7 @@
 class Question
 
+  attr_reader :result
+
   def initialize(num1, num2)
     @num1 = num1
     @num2 = num2
@@ -8,17 +10,14 @@ class Question
 
   def print_question
     "What is #{@num1} + #{@num2}?"
-
   end
 
-  def question_result
-    if
-
+  def question_result(player_answer)
+    if (result == player_answer)
+      "What is #{@num1} + #{@num2}? CORRECT"
+    else
+      "What is #{@num1} + #{@num2}? INCORRECT"
     end
-  else
-
-
   end
-
 
 end
