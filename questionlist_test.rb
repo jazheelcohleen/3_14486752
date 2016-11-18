@@ -18,6 +18,5 @@ class Question_List_Test < Test::Unit::TestCase
     assert_equal(7, @questionlist.list_of_questions[0].num1, 'ERROR')
     assert_equal(3, @questionlist.list_of_questions[0].num2, 'ERROR')
   end
-
-
+  
 end
