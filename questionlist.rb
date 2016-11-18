@@ -2,6 +2,8 @@ require_relative 'question.rb'
 
 class QuestionList
 
+  attr_reader :list_of_questions
+
   def initialize
     @list_of_questions = []
     @result_array = []
@@ -11,9 +13,9 @@ class QuestionList
     @list_of_questions << question
   end
 
-  def print_list
+  def generate_results
     @list_of_questions.size.times do |i|
-      @list_of_questions[i].print_question
+      @result_array << @list_of_questions[i].result
     end
   end
 
